@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.8.2 on darwin)" generated="20210921 17:30:57.975" rpa="false" schemaversion="2">
+<suite id="s1" name="Prueba" source="/Users/usuario/MG/650 Test Falabella/appium/Test/prueba.robot">
+<test id="s1-t1" name="OpenApp">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${url}</arg>
+<arg>platformName=${platf}</arg>
+<arg>deviceName=${device}</arg>
+<arg>appPackage=${package}</arg>
+<arg>appActivity=${activity_name}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210921 17:31:01.537" endtime="20210921 17:31:21.468"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${notNow}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210921 17:31:21.468" endtime="20210921 17:31:21.758"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${notNow}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210921 17:31:21.764" level="INFO">Clicking element 'com.falabella.falabellaApp:id/tv_not_now'.</msg>
+<status status="PASS" starttime="20210921 17:31:21.759" endtime="20210921 17:31:21.877"/>
+</kw>
+<status status="PASS" starttime="20210921 17:31:01.536" endtime="20210921 17:31:21.878"/>
+</test>
+<status status="PASS" starttime="20210921 17:30:57.978" endtime="20210921 17:31:21.879"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Prueba">Prueba</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
